@@ -77,7 +77,7 @@ export default class EditExercise extends Component {
 
     axios
       .post(
-        "https://exercise-tracker-app-backend.glitch.me/exercises/update/"+this.props.params.id,
+        "https://exercise-tracker-app-backend.glitch.me/exercises/update/"+this.props.match.params.id,
         exercise
       )
       .then(res => console.log(res.data))
